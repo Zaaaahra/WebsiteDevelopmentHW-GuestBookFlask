@@ -5,9 +5,9 @@
     <ul>
         {% for entry in guestbook %}
             <li>{{ entry.name }} signed at {{ entry.time }}</li>
-        {% end for %}
+        {% endfor %}
     </ul>
 {% else %}
     <p>No entries yet.</p>
 {% endif %}
-{% end block %}
+{% endblock %}
