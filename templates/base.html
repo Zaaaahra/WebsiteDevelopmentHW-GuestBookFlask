@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/sign">Sign</a> |
+        <a href="/guestbook">Guestbook</a> |
+        <a href="/clear">Clear</a>
+    </nav>
+    <hr>
+    {% block content %}{% end block %}
+</body>
+</html>
