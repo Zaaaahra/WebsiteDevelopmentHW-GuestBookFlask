@@ -1,9 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 40px;
+    background-color: #f9f9f9;
 }
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+textarea, input[type="text"] {
+    width: 300px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.entry {
+    margin-bottom: 10px;
+}
+
+a {
     color: #333;
+    text-decoration: none;
 }

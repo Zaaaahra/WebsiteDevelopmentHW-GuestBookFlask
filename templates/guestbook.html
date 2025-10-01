@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <h2>Guestbook Entries</h2>
-{% if guestbook %}
-    <ul>
-        {% for entry in guestbook %}
-            <li>{{ entry.name }} signed at {{ entry.time }}</li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No entries yet.</p>
-{% endif %}
+    {% if guestbook %}
+        <ul>
+            {% for entry in guestbook %}
+                <li class="entry"><strong>{{ entry.name }}</strong>: {{ entry.message }}<strong>   {{    entry.time}}</strong></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No entries yet.</p>
+    {% endif %}
 {% endblock %}
